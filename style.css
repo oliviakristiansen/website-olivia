@@ -1,0 +1,634 @@
+body {
+    margin: 0;
+}
+.dropbtn {
+    border-radius: 5px;
+    
+}
+
+/* navbar */
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    /* background-color: #000000; */
+    /* opacity: 0.5; */
+}
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    font-family: sans-serif;
+    
+}
+.nav {
+    padding: 16px;
+    /* margin: 10px; */
+    border-radius: 5px;
+
+}
+.nav a {
+    padding-left: 16px;
+    color: #A8ACBF;
+    text-decoration: none;    
+}
+.navbar .nav:hover{
+    background-color: #98808C
+        
+}
+.navbar li{
+    color: #DFD1C3;
+    font-size: 18px;
+    background-color: #000000;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: none;
+    color: #A8ACBF;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #98808C;
+}
+
+/*home page  */
+.home {
+    background-image: url('images/violin2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+   
+}
+
+.home h2 {
+    display: flex;
+    justify-content: flex-start;
+   /* float: left; */
+    margin-top: 8%;
+    font-size: 50px;
+    color: #98808C;
+    font-family: 'Josefin Sans';
+    margin-left: 15%;  
+}
+.home h3 {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 30px;
+    color: #98808C;
+    font-family: 'Josefin Sans';
+    padding-right: 40%; 
+    padding-left: 18%; 
+}
+
+
+/*bio page  */
+.bio {
+    background-image: url("images/10.jpg"); 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250vh;
+    padding-top: 5%;
+   
+}
+.bio h2{
+    text-align: center;
+    float: right;
+    /* margin-top: 5%; */
+    font-size: 50px;
+    color: #98808C;
+    font-family: 'Josefin Sans';
+     margin-right: 23%;  
+    padding-left: 200%;
+    padding-bottom: 5%;
+}
+.bio p {
+    display: flex;
+    color: rgb(77, 62, 70);
+    font-size: 25px;
+    text-align: center;
+    padding: 5%;
+    /* padding-right: 5%;  */
+    margin-right: 10%;
+    margin-left: 10%; 
+    /* padding-left: 5%;  */
+    background: rgba(204, 204, 204, 0.7);
+    /* opacity: 0.5; */
+}
+
+/* portfolio */
+.portfolio h2{
+    font-size: 50px;
+    color: #98808C;
+    font-family: 'Josefin Sans';
+    text-align: center;
+}
+
+.portfolio p{
+    color: rgb(77, 62, 70);
+    font-size: 25px;
+    text-align: center;
+}
+#myCarousel{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.carousel-caption{
+    background-color: white;
+    opacity: 0.8;
+    margin: 3%;
+    border-radius: 5px;
+}
+.portfolio h3{
+    color: rgb(139, 143, 158);
+    font-size: 35px;
+}
+/* For width 1025px and smaller: */
+@media only screen and (max-device-width: 1025px) {
+    .home { 
+        background-image: url('images/violin2-2.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+    }
+    .bio {
+        height: 200vh;
+    }
+}
+@media only screen and (max-device-width: 450px){
+    .bio {
+        height: 170vh;
+    }
+}
+/*videos  */
+.videos h2 {
+    text-align: center;
+    font-size: 50px;
+    color: #98808C;
+    font-family: 'Josefin Sans';
+    margin-top: 0px;
+    padding-top: 3%;
+}
+.videos {
+    /* display: inline; */
+    background-color: #A8ACBF;
+    padding-bottom: 3%;
+}
+#group1 {
+    background-color: gray;
+    margin: 5%;
+    padding: 3%;
+}
+#group1 p {
+   color: #DFD1C3;
+   text-align: center;
+   font-size: 25px;
+   padding-right: 3%;
+   padding-left: 3%;
+   /* margin: 5%; */
+}
+.embed-responsive-item{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+}
+/*gallery  */
+.gallery h2 {
+    text-align: center;
+    font-size: 50px;
+    color: #98808C;
+    font-family: 'Josefin Sans';
+    margin-top: 0%;
+    padding-top: 3%;
+    
+}
+.gallery {
+    background-color: white;
+    padding-top: 0px;
+}
+
+.gallery img {
+    display: inline;
+    
+    padding: 1%;
+}
+/* contact */
+.contact h2 {
+    text-align: center;
+    font-size: 50px;
+    color: #98808C;
+    font-family: 'Josefin Sans';
+    margin-top: 0%;
+    padding-top: 3%;
+    
+}
+.contact {
+    background-color: #DFD1C3;
+    padding-top: 0px;
+}
+.contact p {
+    color: black;
+    
+    /* text-align: center;
+    padding-left: 0px;
+    padding-bottom: 5%; */
+    /* justify-content: center; */
+}
+
+
+
+
+
+
+
+
+
+/* img { */
+    /* display: block; */
+/* } */
+/* iframe{
+    padding: 3%;
+} */
+    /* nav li:nth-of-type(1){
+    padding-right: 5%;
+    float: none;
+} 
+nav li:nth-of-type(2){
+    padding-right: 5%;
+        float: none;
+
+}
+nav li:nth-of-type(3){
+    padding-right: 5%;
+        float: none;
+
+}
+nav li:nth-of-type(4){
+    padding-right: 5%;
+        float: none;
+
+}
+nav li:nth-of-type(5){
+    padding-right: 5%;
+        float: none;
+
+}
+nav li:nth-of-type(4){
+    padding-right: 5%;
+        float: none;
+
+}    */
+
+
+/* body#bio {
+    background-image: url('images/A6643767.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Josefin Sans';
+    font-size: 24px;
+    .panel-default {
+        opacity: 0.8;
+        margin-left: 30px;
+        margin-right: 48%;
+        background-color: lightgray;
+        margin-top: 80px;
+        h3 {
+            padding-top: 30px;
+            font-size: 80px;
+            opacity: 0.7;
+            color: #8c4141;
+            text-align: center;
+        }
+    }
+}
+
+body#contact {
+    background-color: lightgray;
+    padding-top: 100px;
+    h4 {
+        color: #8c4141;
+    }
+}
+body#video {
+    background-color: lightgray;
+    h4 {
+        color: #8c4141;
+        padding-top: 100px;
+    }
+    p {
+        font-family: 'Josefin Sans';
+        text-align: center;
+    }
+}
+// iframe {
+//     margin-left: 3%;
+// }
+body#performance {
+    background-color: lightgray;
+    h4 {
+        color: #8c4141;
+        padding-top: 100px;
+    }
+}
+body#gallery {
+    background-color: lightgray;
+    font-family: 'Josefin Sans';
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+    img {
+        display: block;
+        margin: auto;
+        padding: 10px;
+    }
+
+}
+
+
+body#lessons {
+    // background-color: lightgray;
+    background-image: url('/images/IMG_1514.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Josefin Sans';
+    font-size: 18px;
+    padding: 10px;
+    .list {
+        padding-right: 200px;
+        padding-left: 200px;
+    }
+    p {
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+    p#enter {
+        padding-right: 400px;
+    }
+    .panel-default {
+        opacity: 0.7;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-top: 100px;
+    }
+}
+
+body#gallery {
+    h4 {
+        padding-top: 100px;
+    }
+}
+
+
+body.login {
+    background-image: url('/images/IMG_1514.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    .container {
+        opacity: 0.5;
+        input {
+            background-color: @color-03;
+            width: 300px;
+        }
+        button {
+            float: left;
+            width: 300px;
+        }
+        p {
+            float: left;
+        }
+    }
+}
+
+body.profile {
+    background-color: lightgray;
+    font-family: 'Josefin Sans';
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+body.users {
+    background-color: lightgray;
+    font-family: 'Josefin Sans';
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+        a.btn-primary {
+            background-color: @color-01;
+        }
+}
+
+body#register {
+    background-image: url('/images/A6643767.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    .container {
+        opacity: 0.5;
+        input {
+            background-color: @color-03;
+            width: 300px;
+        }
+        button {
+            float: left;
+            width: 300px;
+        }
+    }
+}
+
+body.reset {
+    background-color: lightgray;
+    font-family: 'Josefin Sans';
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+    .container {
+        opacity: 0.5;
+        input {
+            background-color: @color-03;
+            width: 300px;
+        }
+        button {
+            float: left;
+            width: 300px;
+        }
+    }
+}
+
+button#load {
+    background-color: @color-01;
+
+}
+
+#contact {
+    font-family: 'Josefin Sans';
+    font-size: 40px;
+    p {
+        text-align: center;
+        padding: 20px;
+    }
+}
+
+div.container {
+    padding: 20px;
+    text-align: center;
+}
+
+div.edit {
+    font-size: 20px;
+    opacity: 0.5;
+    color: @color-03;
+    font-family: 'Josefin Sans';
+    padding: 70px;
+}
+
+#lessons {
+    background-color: @color-01;
+    p {
+        // text-align: center;
+        font-size: 30px;
+    }
+}
+
+div.list {
+    // visibility: hidden;
+}
+
+div.lessons {
+    font-size: 20px;
+    opacity: 0.5;
+    color: @color-03;
+    font-family: 'Josefin Sans';
+    padding-left: 50px;
+}
+
+div.select {
+    text-align: center;
+}
+
+div.view {
+    font-size: 20px;
+    opacity: 0.5;
+    color: @color-03;
+    font-family: 'Josefin Sans';
+    padding-left: 70px;
+}
+
+h2 {
+    font-size: 200px;
+    /* opacity: 0.8;
+    color: #8c4141;
+    font-family: 'Josefin Sans'; */
+    /* // padding-top: 110px;
+    // padding-left: 70px;
+    // padding-bottom: 20px; */
+
+/* }
+
+h4{
+    font-size: 100px;
+    opacity: 0.8;
+    color: #8c4141;
+    font-family: 'Josefin Sans';
+    // padding-top: 110px;
+    padding-left: 70px;
+    padding-bottom: 20px;
+}
+.homepage {
+    height: 100vh;
+    background-image: url('/images/A6643766.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header {
+    display: none;
+}
+
+nav {
+    opacity: 0.5;
+    font-family: 'Josefin Sans';
+    font-size: 18px;
+    text-align: center;
+    a:hover {
+        text: @color-01;
+    }
+
+}
+
+p.admin {
+    font-size: 20px;
+    opacity: 0.5;
+    color: @color-03;
+    font-family: 'Josefin Sans';
+    padding-left: 70px;
+}
+
+
+p#please {
+    text-align: center;
+}
+
+#performance {
+    font-family: 'Josefin Sans';
+    font-size: 30px;
+    p {
+        padding: 20px;
+        text-align: center;
+    }
+} */ 
